@@ -147,32 +147,41 @@ p {
   }
 }
 header {
-  position: relative;
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url("../img/bg-pattern.png"), #7b4397;
-  /* fallback for old browsers */
+  background-image: url("../img/bg01.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  /*background: url("../img/bg-pattern.png"), #7b4397;
+  /* fallback for old browsers 
   background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
-  /* Chrome 10-25, Safari 5.1-6 */
+  /* Chrome 10-25, Safari 5.1-6 
   background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 }
 header .header-content {
   text-align: center;
-  padding: 150px 0 50px;
   position: relative;
 }
 header .header-content .header-content-inner {
-  position: relative;
   max-width: 500px;
   margin: 0 auto;
+  text-align: center;
 }
 header .header-content .header-content-inner h1 {
+  text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
-  font-size: 30px;
+  font-size: 100px;
+  text-transform: uppercase;
 }
 header .header-content .header-content-inner .list-badges {
   margin-bottom: 25px;
@@ -193,7 +202,7 @@ header .device-container .screen img {
     min-height: 100%;
   }
   header .header-content {
-    text-align: left;
+    text-align: center;
     padding: 0;
     height: 100vh;
   }
@@ -217,6 +226,14 @@ header .device-container .screen img {
   header .header-content .header-content-inner h1 {
     font-size: 50px;
   }
+}
+header .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(81, 163, 163, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 section {
   padding: 100px 0;
@@ -295,15 +312,32 @@ section.features .feature-item i {
     max-width: none;
   }
 }
+section.bg1 {
+  position: relative;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url('../img/bg02.jpg');
+  background-size: cover;
+  padding: 250px 0;
+}
+section.bg1 .bg1-content {
+  position: relative;
+  z-index: 1;
+}
+section.bg1 .bg1-content h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: white;
+  max-width: 450px;
+  font-size: 50px;
+}
 section.cta {
   position: relative;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/bg-cta.jpg');
-  padding: 250px 0;
+  background-attachment: fixed;
+  background-image: url('../img/bg03.jpg');
+  background-size: cover;
+  font-size: 14px;
 }
 section.cta .cta-content {
   position: relative;
