@@ -52,7 +52,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll" href="#download">WHAT</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#features">Features</a>
@@ -75,7 +75,7 @@
                         <div class="header-content-inner">
                             <h2>Computer Science</h2>
                             <h1>101 WEEK</h1>
-                            <a href="#download" class="btn btn-outline btn-xl page-scroll">Start Now for Free!</a>
+                            <a href="#download" class="btn btn-outline btn-xl page-scroll">Buy your 101 kit!</a>
                         </div>
                     </div>
                 </div>
@@ -87,11 +87,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h2 class="section-heading">What is 101 Week?</h2>
-                    <p>Ours is a field of countless opportunities, one where your future is what you make it, and one that will give the power to truly change the world. With technology becoming more and more integrated into society the world over Computer Science is becoming more and more important, and no matter where your interests lie there are ways to apply it. The next four years will teach you to see the world in entirely new ways. We at the CSSA are here to make your transition into your university career as fun and exciting as possible.</p>
+                    <h2 class="section-heading">Wait...what is 101 week?</h2>
 
-                    <p>But this isn't all the week is about!
-                    Find out more about your program, meet new people and make friends you'll keep for the rest of your life, and get an introduction to unversity life. It'll be a week you'll never forget!</p>
+                    <p>Find out more about your program, meet new people and make friends you'll keep for the rest of your life, and get an introduction to unversity life. It'll be a week you'll never forget!</p>
 
                     <p>Every year each student association puts on a week packed with events. These events are meant to introduce you to your fellow Computer Science students, as well as your peers in other faculties such as Science or Engineering. The week is going to be filled with exciting event! There will be a lot to do! Thinking this sounds pretty great? Well all you need to enjoy it is a CSI 101 Week Kit.</p>
                 </div>
@@ -113,61 +111,20 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-heading">
-                        <h2>Unlimited Features, Unlimited Fun</h2>
-                        <p class="text-muted">Check out what you can do with this app theme!</p>
+                        <h2>So like who are you?</h2>
+                        <p class="text-muted">We are the Computer Science Student Association (a.k.a. CSSA)!</p>
+                    </div>
+                </div>
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="container-fluid">
+                                <div class="feature-item">
+                                    <p>We provide services and support to the Computer Science students of the university of Ottawa. We represent our electorate at the SFUO and the faculty of Engineering. We make sure that our voices are heard and our concerns addressed.</p>
+
+                                    <p>Throughout the year we plan, organize, promote, and run activities and events both in the social sphere and the academic and professional spheres. Regular themes are game nights and speaker series. However the biggest event we put up is 101 Week, a week filled with activities helping new students start their university journey the best way possible!</p>
+                                </div>
+                            </div>
+                        </div>
                         <hr>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt=""> </div>
-                                <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-screen-smartphone text-primary"></i>
-                                    <h3>Device Mockups</h3>
-                                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-camera text-primary"></i>
-                                    <h3>Flexible Use</h3>
-                                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-present text-primary"></i>
-                                    <h3>Free to Use</h3>
-                                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-lock-open text-primary"></i>
-                                    <h3>Open Source</h3>
-                                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -176,9 +133,46 @@
 
     <section class="cta">
         <div class="cta-content">
+            <p id="countdown"></p>
+
+            <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Sept 2, 2017 09:30:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+              // Get todays date and time
+              var now = new Date().getTime();
+
+              // Find the distance between now an the count down date
+              var distance = countDownDate - now;
+
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+              // Display the result in the element with id="demo"
+              document.getElementById("Countdown").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+
+              // If the count down is finished, write some text 
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "101 HAS STARTED!";
+              }
+            }, 1000);
+            </script>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-content">
             <div class="container">
-                <h2>Stop waiting.<br>Buy tickets now.</h2>
-                <a href="#contact" class="btn btn-outline btn-xl page-scroll">Let's Get Started!</a>
+                <h2>Don't wait!<br>Buy your tickets today.</h2>
+                <a href="#contact" class="btn btn-outline btn-xl page-scroll">I'm joining 101 Week</a>
             </div>
         </div>
         <div class="overlay"></div>
@@ -229,6 +223,26 @@
 
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        var bgCounter = -1,
+        backgrounds = [
+           "img/bg01-01.jpg",
+           "img/bg01-02.jpg",
+           "img/bg01-03.jpg",
+        ];
+
+        function changeBackground(){
+            bgCounter = (bgCounter+1) % backgrounds.length;
+            $('header').css('background-image', 'url('+backgrounds[bgCounter]+')');
+            setTimeout(changeBackground,10000);
+        }
+
+        changeBackground();
+    });
+    </script>
+
 
 </body>
 

@@ -52,6 +52,7 @@ h6 {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
+  text-align: center;
 }
 p {
   font-size: 18px;
@@ -147,8 +148,7 @@ p {
   }
 }
 header {
-  width: 100%;
-  min-height: auto;
+  height: 100%;
   overflow-y: hidden;
   background-image: url("../img/bg01.jpg");
   background-position: center;
@@ -158,73 +158,85 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-  /*background: url("../img/bg-pattern.png"), #7b4397;
-  /* fallback for old browsers 
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
-  /* Chrome 10-25, Safari 5.1-6 
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
   color: white;
+  display: block;
 }
-header .header-content {
-  text-align: center;
-  position: relative;
+header .header-content{
+  padding-top: 15%;
 }
-header .header-content .header-content-inner {
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: center;
-}
-header .header-content .header-content-inner h1 {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-size: 100px;
+
+header .header-content h2{
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
   text-transform: uppercase;
+  margin-bottom: -20px;
+  background-color: #fdc539;
+  padding: 10px;
+  display:inline;
 }
-header .header-content .header-content-inner .list-badges {
+
+header .header-content h1{
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 150px;
+  line-height: 150px;
+}
+
+header .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+header .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 22px;
   margin-bottom: 25px;
 }
-header .header-content .header-content-inner .list-badges img {
-  height: 50px;
+header .intro-text .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
   margin-bottom: 25px;
-}
-header .device-container {
-  max-width: 300px;
-  margin: 0 auto 100px;
-}
-header .device-container .screen img {
-  border-radius: 3px;
 }
 @media (min-width: 768px) {
-  header {
-    min-height: 100%;
-  }
-  header .header-content {
-    text-align: center;
-    padding: 0;
-    height: 100vh;
-  }
-  header .header-content .header-content-inner {
-    max-width: none;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  header .header-content .header-content-inner h1 {
-    font-size: 35px;
-  }
-  header .device-container {
-    max-width: none;
-    max-height: calc(0vh);
-    margin: 100px auto 0;
-  }
+
+  header .header-content h2{
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: -20px;
 }
-@media (min-width: 992px) {
-  header .header-content .header-content-inner h1 {
-    font-size: 50px;
+
+header .header-content h1{
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 200px;
+}
+  header .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+  header .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+  header .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px;
   }
 }
 header .overlay {
@@ -349,6 +361,7 @@ section.cta .cta-content h2 {
   color: white;
   max-width: 450px;
   font-size: 50px;
+  text-align: left !important;
 }
 @media (min-width: 768px) {
   section.cta .cta-content h2 {
@@ -482,3 +495,144 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+
+#loader{
+  width: 180px;
+  padding-top: 180px;
+  margin: auto;
+  vertical-align: middle;
+}
+
+#loader h1{
+  font-family: 'Lato';
+  color: white;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 1.5px;
+  text-align: center;
+  width: 155px;
+  margin-top: 20px;
+  -webkit-animation: fade 2s infinite;
+  -moz-animation: fade 2s infinite;
+}
+
+.stick {
+  width: 30px;
+  height: 3px;
+  background: white;
+  display: inline-block;
+  margin-left: -8px; }
+
+.stick:nth-child(n) {
+  transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  /* IE 9 */
+  -webkit-transform: rotate(30deg);
+  /* Safari and Chrome */
+  -moz-transform: rotate(30deg);
+  -webkit-animation: fall 2s infinite;
+  -moz-animation: fall 2s infinite; }
+
+.stick:nth-child(2n) {
+  transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-30deg);
+  /* Safari and Chrome */
+  -moz-transform: rotate(-30deg);
+  -webkit-animation: rise 2s infinite;
+  -moz-animation: rise 2s infinite; }
+
+@-webkit-keyframes rise {
+  50% {
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    /* IE 9 */
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg); } }
+
+@-moz-keyframes rise {
+  50% {
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    /* IE 9 */
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg); } }
+
+@-o-keyframes rise {
+  50% {
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    /* IE 9 */
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg); }
+
+  @keyframes rise {
+    50% {
+      transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+      /* IE 9 */
+      -webkit-transform: rotate(30deg);
+      -moz-transform: rotate(30deg); } } }
+
+@-webkit-keyframes fall {
+  50% {
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(30deg); } }
+
+@-moz-keyframes fall {
+  50% {
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg); } }
+
+@-o-keyframes fall {
+  50% {
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(30deg); }
+
+  @keyframes fall {
+    50% {
+      transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+      /* IE 9 */
+      -webkit-transform: rotate(-30deg);
+      -moz-transform: rotate(30deg); } } }
+
+@-webkit-keyframes fade {
+  50% {
+    opacity: 0.5; }
+
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fade {
+  50% {
+    opacity: 0.5; }
+
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes fade {
+  50% {
+    opacity: 0.5; }
+
+  100% {
+    opacity: 1; }
+
+  @keyframes fade {
+    50% {
+      opacity: 0.5; }
+
+    100% {
+      opacity: 1; } } }
+
+
